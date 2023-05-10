@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+    input[type=text], input[type=email], input[type=password] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+
+    button[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+   
+    button[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+
+    .container {
+      padding: 16px;
+      background-color: #f2f2f2;
+    }
+    
+  
+    h1 {
+      text-decoration: underline;
+    }
+    
+   
+    label {
+      font-weight: bold;
+    }
+    
+   
+    form {
+      margin: 0 auto;
+      width: 50%;
+      max-width: 500px;
+    }
+  </style>    
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Registration</h1>
+        <label for="fname"><b>First Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="fname" required>
+        <label for="lname"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="lname" required>
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit" class="registerbtn">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
